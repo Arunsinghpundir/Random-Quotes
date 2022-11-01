@@ -17,7 +17,7 @@ async function getQuotes(){
 getQuotes();
 
 async function nextQuote(){
-    let img = ['url("https://images.unsplash.com/photo-1516900557549-41557d405adf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80")','url("https://images.unsplash.com/photo-1617731053466-d40ac1568fc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")' ,'url("https://images.unsplash.com/photo-1534802332599-c51e9190031e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=822&q=80")', 'url("https://images.unsplash.com/photo-1461906903741-bf21de16ae85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")'];
+    let img = ['url("https://images.unsplash.com/photo-1516900557549-41557d405adf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80")','url("https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80")','url("https://images.unsplash.com/photo-1617731053466-d40ac1568fc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")' ,'url("https://images.unsplash.com/photo-1534802332599-c51e9190031e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=822&q=80")', 'url("https://images.unsplash.com/photo-1461906903741-bf21de16ae85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")'];
     let randomImg =  img[Math.floor(Math.random() * img.length)];
     console.log(randomImg);
     document.body.style.backgroundImage = randomImg;
@@ -30,6 +30,8 @@ async function nextQuote(){
     const randomQ = arrayOfQuotes[Math.floor(Math.random()*arrayOfQuotes.length)];
     document.querySelector("#text").innerHTML = `"${randomQ.text}"`;
     document.querySelector(".author-name").innerHTML = `- ${randomQ.author}`;
+
+    // if author name is null
     if(randomQ.author == null){
         document.querySelector(".author-name").innerHTML = `- ${"Unknown"}`;
     }
