@@ -22,7 +22,7 @@ async function nextQuote(){
     console.log(randomImg);
     document.body.style.backgroundImage = randomImg;
     document.body.style.backgroundRepeat =" no-repeat";
-    document.body.style.backgroundSize =  " 1850px 1255px";
+    document.body.style.backgroundSize =  " 1850px 1385px";
     document.querySelector("#heading").style.color = "white";
     const ur = "https://type.fit//api/quotes";
     const res =  await fetch(ur);

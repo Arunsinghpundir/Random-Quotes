@@ -9,7 +9,7 @@ html {
 body {
   background-repeat: no-repeat;
   background: url("https://images.unsplash.com/photo-1534800891164-a1d96b5114e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=459&q=80");
-  background-size: 1450px 655px;
+  background-size: 1450px 1385px;
   height: 100%;
   width: 100%;
 }
@@ -72,7 +72,7 @@ button:hover:active {
   background-color: rgb(243, 234, 232);
   font-size: 15px;
 }
-@media (min-width: 300px) or (max-width: 1800) {
+@media (max-width: 1280px) {
   body {
     background-size: 1800px 1200px;
     background-repeat: no-repeat;
