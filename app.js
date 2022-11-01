@@ -22,7 +22,7 @@ async function nextQuote(){
     console.log(randomImg);
     document.body.style.backgroundImage = randomImg;
     document.body.style.backgroundRepeat =" no-repeat";
-    document.body.style.backgroundSize =  " 1450px 655px";
+    document.body.style.backgroundSize =  " 1850px 1255px";
     document.querySelector("#heading").style.color = "white";
     const ur = "https://type.fit//api/quotes";
     const res =  await fetch(ur);
@@ -36,5 +36,5 @@ async function nextQuote(){
     document.body.style.transition= "1.2s";
     document.querySelector("#heading").style.transition = "1.2s";
     document.querySelector("#text").style.transition = "1.2s";
-    document.querySelector(".author-name").style.transition = "1.2s";
+    document.querySelector(".author-name").style.transition = "2s";
 }
