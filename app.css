@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  /* background: url("https://images.unsplash.com/photo-1534800891164-a1d96b5114e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=459&q=80");
+  background-repeat: no-repeat;
+  background-size: 1330px 555px; */
+  display: flex;
+  overflow: hidden;
+}
+body {
+  background-repeat: no-repeat;
+  background: url("https://images.unsplash.com/photo-1534800891164-a1d96b5114e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=459&q=80");
+  background-size: 1450px 655px;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 165px;
+}
+.quote-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  min-width: 300px;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 10px black;
+  transition: 0.8s;
+}
+#text {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 10px;
+}
+#heading {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: 0.8s;
+}
+.author-name {
+  display: flex;
+  justify-content: center;
+  color: rgb(240, 233, 233);
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 10px;
+  transition: 0.8s;
+}
+button {
+  margin-top: 50px;
+  margin-left: 47%;
+  margin-right: 50%;
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: rgb(236, 174, 158);
+  border-style: none;
+  font-size: 18px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button:hover:active {
+  box-shadow: 0px 0px 12px 5px rgb(20, 20, 15);
+  background-color: rgb(243, 234, 232);
+  font-size: 15px;
+}
