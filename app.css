@@ -72,7 +72,7 @@ button:hover:active {
   background-color: rgb(243, 234, 232);
   font-size: 15px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 508px) {
   body {
     background-size: 1800px 1200px;
     background-repeat: no-repeat;
